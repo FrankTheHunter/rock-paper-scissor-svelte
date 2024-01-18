@@ -1,5 +1,7 @@
 <!-- Début du code HTML et utilisation de Svelte -->
 
+
+
 <!-- Crée une section de script pour le jeu en utilisant Svelte -->
 <script>
   // Définition de variables réactives pour le jeu
@@ -7,7 +9,34 @@
   export let machinePicked = ""; // Choix de la machine
   export let resultMessage; // Message de résultat
   export let onPlayagain; // Fonction pour rejouer
+
 </script>
+
+
+<div class="game">
+  <div>
+    <p>You picked</p>
+    <div class="picked button-{userPicked}">
+      <div class="circle">
+        <img src="./img/icon-{userPicked}.svg" alt={userPicked} />
+      </div>
+    </div>
+  </div>
+  {#if resultMessage}
+    <div class="result">
+      <span id="resultText">{resultMessage}</span>
+      <button id="playagain" on:click={onPlayagain}>Play again</button>
+    </div>
+  {/if}
+  <div>
+    <p>The Machine picked</p>
+    <div class="picked button-{machinePicked}">
+      <div class="circle">
+        <img src="./img/icon-{machinePicked}.svg" alt={machinePicked} />
+      </div>
+    </div>
+  </div>
+</div>
 
 <style>
   .game {
@@ -113,27 +142,4 @@
   }
 </style>
 
-<div class="game">
-  <div>
-    <p>You picked</p>
-    <div class="picked button-{userPicked}">
-      <div class="circle">
-        <img src="./img/icon-{userPicked}.svg" alt={userPicked} />
-      </div>
-    </div>
-  </div>
-  {#if resultMessage}
-    <div class="result">
-      <span id="resultText">{resultMessage}</span>
-      <button id="playagain" on:click={onPlayagain}>Play again</button>
-    </div>
-  {/if}
-  <div>
-    <p>The Machine picked</p>
-    <div class="picked button-{machinePicked}">
-      <div class="circle">
-        <img src="./img/icon-{machinePicked}.svg" alt={machinePicked} />
-      </div>
-    </div>
-  </div>
-</div>
+
