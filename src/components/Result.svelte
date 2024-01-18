@@ -107,9 +107,10 @@
   .result > span { /* Styles pour le texte du résultat du jeu */
     color: #fff;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 2px;
     margin-bottom: 15px;
+    font-weight: bold;
   }
 
   @media screen and (max-width: 575px) { /* Styles pour la mise en page responsive sur les petits écrans */

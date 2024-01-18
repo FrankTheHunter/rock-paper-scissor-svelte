@@ -46,8 +46,8 @@
   /* Style pour le modal des règles. */
   .modal {
     position: absolute; /* Position absolue pour un alignement précis. */
-    left: 0;
-    top: 50%; /* Centré verticalement. */
+    left: 40%;
+    top: 10%; /* Centré verticalement. */
     background: #fff; /* Fond blanc pour le modal. */
 
     margin: 10% auto; /* Marge pour le centrage horizontal. */
