@@ -36,21 +36,22 @@
   .rules {
     display: flex; /* Utilisation de Flexbox pour le centrage. */
     position: fixed; /* Position fixe pour recouvrir toute la page. */
-    top: 0;
-    left: 0;
-    width: 100vw; /* Largeur complète de la vue. */
-    height: 100vh; /* Hauteur complète de la vue. */
-    background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent noir. */
+    top: 0; /* Positionne le haut du modal au bord supérieur de la page. */
+    left: 0; /* Positionne le côté gauche du modal au bord gauche de la page. */
+    right: 0; /* Positionne le côté droit du modal au bord droit de la page. */
+    bottom: 0; /* Positionne le bas du modal au bord inférieur de la page. */
+    align-items: center; /* Centre verticalement le contenu à l'intérieur du modal. */
+    justify-content: center; /* Centre horizontalement le contenu à l'intérieur du modal. */
+    background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent noir. 
+                                        rgba = rouge, vert, bleu, alpha (transparence). */
+
   }
 
   /* Style pour le modal des règles. */
   .modal {
     position: absolute; /* Position absolue pour un alignement précis. */
-    left: 40%;
-    top: 10%; /* Centré verticalement. */
     background: #fff; /* Fond blanc pour le modal. */
 
-    margin: 10% auto; /* Marge pour le centrage horizontal. */
     padding: 20px; /* Espace interne du modal. */
     width: 400px; /* Largeur fixe. */
     height: 400px; /* Hauteur fixe. */
