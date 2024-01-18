@@ -3,12 +3,12 @@
 
 
 <!-- Crée une section de script pour le jeu en utilisant Svelte -->
-<script>
-  // Définition de variables réactives pour le jeu
-  export let userPicked = ""; // Choix de l'utilisateur
-  export let machinePicked = ""; // Choix de la machine
-  export let resultMessage; // Message de résultat
-  export let onPlayagain; // Fonction pour rejouer
+<script lang="ts">
+  export let userPicked: string = "";
+  export let machinePicked: string = "";
+  export let resultMessage: string; // Déclaration explicite comme chaîne de caractères
+  export let onPlayagain: () => void; // Si onPlayagain est une fonction, déclarez également son type
+
 
 </script>
 

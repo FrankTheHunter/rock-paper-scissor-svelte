@@ -4,12 +4,13 @@
 </script>
 
 <style>
+
   .choice {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* background: url("./img/bg-triangle.svg") no-repeat center; */
+    background: url("./img/bg-triangle.svg") no-repeat center;
   }
 
   .buttons {

@@ -13,6 +13,7 @@
 </div>
 
 <style>
+  
   .header-game {
     border: 2px solid hsl(217, 16%, 45%);
     border-radius: 20px;

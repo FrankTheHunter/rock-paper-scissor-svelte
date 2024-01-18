@@ -52,6 +52,7 @@
     machinePicked = null;
     resultMessage = null;
   }
+  
 </script>
 
 <div class="container">
