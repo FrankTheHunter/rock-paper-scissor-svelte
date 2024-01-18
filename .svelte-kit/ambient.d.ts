@@ -26,6 +26,7 @@
  * ```
  */
 declare module '$env/static/private' {
+	export const GJS_DEBUG_TOPICS: string;
 	export const LESSOPEN: string;
 	export const USER: string;
 	export const npm_config_user_agent: string;
@@ -49,7 +50,6 @@ declare module '$env/static/private' {
 	export const npm_config_userconfig: string;
 	export const npm_config_local_prefix: string;
 	export const DBUS_SESSION_BUS_ADDRESS: string;
-	export const DBUS_STARTER_BUS_TYPE: string;
 	export const IM_CONFIG_CHECK_ENV: string;
 	export const SYSTEMD_EXEC_PID: string;
 	export const COLORTERM: string;
@@ -98,13 +98,13 @@ declare module '$env/static/private' {
 	export const GDMSESSION: string;
 	export const QT_ACCESSIBILITY: string;
 	export const LESSCLOSE: string;
+	export const GJS_DEBUG_OUTPUT: string;
 	export const QT_IM_MODULE: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const npm_config_globalconfig: string;
 	export const npm_config_init_module: string;
 	export const PWD: string;
 	export const npm_execpath: string;
-	export const DBUS_STARTER_ADDRESS: string;
 	export const XDG_CONFIG_DIRS: string;
 	export const XDG_DATA_DIRS: string;
 	export const npm_config_global_prefix: string;
@@ -143,6 +143,7 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
+		GJS_DEBUG_TOPICS: string;
 		LESSOPEN: string;
 		USER: string;
 		npm_config_user_agent: string;
@@ -166,7 +167,6 @@ declare module '$env/dynamic/private' {
 		npm_config_userconfig: string;
 		npm_config_local_prefix: string;
 		DBUS_SESSION_BUS_ADDRESS: string;
-		DBUS_STARTER_BUS_TYPE: string;
 		IM_CONFIG_CHECK_ENV: string;
 		SYSTEMD_EXEC_PID: string;
 		COLORTERM: string;
@@ -215,13 +215,13 @@ declare module '$env/dynamic/private' {
 		GDMSESSION: string;
 		QT_ACCESSIBILITY: string;
 		LESSCLOSE: string;
+		GJS_DEBUG_OUTPUT: string;
 		QT_IM_MODULE: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		npm_config_globalconfig: string;
 		npm_config_init_module: string;
 		PWD: string;
 		npm_execpath: string;
-		DBUS_STARTER_ADDRESS: string;
 		XDG_CONFIG_DIRS: string;
 		XDG_DATA_DIRS: string;
 		npm_config_global_prefix: string;
